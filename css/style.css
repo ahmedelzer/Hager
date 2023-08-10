@@ -1,0 +1,81 @@
+:root{
+  --colr:#EF3D25;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:#edede9 ;
+    padding: 0;
+    margin: 0;
+    min-height: 900px;
+    font-family: "Open Sans", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.page h1{
+  margin-bottom: 60px;
+}
+h2{
+  margin-top: 60px;
+}
+.memory-game-blocks .game-block {
+  transition: transform .5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -ms-transition: transform .5s;
+  -o-transition: transform .5s;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+.memory-game-blocks .game-block .back {
+  background-color: #0c0c0c;
+  color: white;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.memory-game-blocks .game-block .back h5{
+  font-weight: bold;
+}
+.memory-game-blocks .game-block .face img{
+  border-radius: 6px;
+
+}
+.memory-game-blocks .game-block .face {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+  border-radius: 6px;
+
+}
+.memory-game-blocks .game-block:hover{
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  pointer-events: none;
+} 
+.row{
+  gap:30px ;
+}
+@media (max-width: 576px){
+  .memory-game-blocks .game-block:hover{
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+}
+}
