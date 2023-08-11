@@ -61,7 +61,7 @@ h2{
   border-radius: 6px;
 
 }
-.memory-game-blocks .game-block:hover{
+.memory-game-blocks:hover .game-block{
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   transform: rotateY(180deg);
